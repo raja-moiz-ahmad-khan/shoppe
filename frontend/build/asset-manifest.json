@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7966e266.css",
+    "main.js": "/static/js/main.a29bb054.js",
+    "static/media/BarlowCondensed-Regular.ttf": "/static/media/BarlowCondensed-Regular.a51441e972d57b28e7c1.ttf",
+    "index.html": "/index.html",
+    "main.7966e266.css.map": "/static/css/main.7966e266.css.map",
+    "main.a29bb054.js.map": "/static/js/main.a29bb054.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7966e266.css",
+    "static/js/main.a29bb054.js"
+  ]
+}
