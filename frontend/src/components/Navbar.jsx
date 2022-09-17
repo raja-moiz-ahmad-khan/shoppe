@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightToBracket, faHeart, faShoppingBag, faUser } from'@fortawesome/free-solid-svg-icons'
 import "../styles/navbar.css";
 import { NavLink } from "react-router-dom";
+import { Store } from "../Store";
 
 const Navbar = () => {
+
+  const { state } = useContext(Store);
+  const {cart, wish} = state;
+
   return (
     <div className="n-container">
       <div className="n-row">
@@ -38,8 +43,8 @@ const Navbar = () => {
         <div className="n-col">
           <div className="icons">
           <a href="/login"><span><FontAwesomeIcon icon={faArrowRightToBracket}/> Login </span></a>
-          <a href="/wish"><span><FontAwesomeIcon icon={faHeart}/><span className="totalItems">0</span></span></a>
-        <a href="/cart"><span><FontAwesomeIcon icon={faShoppingBag}/><span className="totalItems">0</span></span></a>
+          <a href="/wish"><span><FontAwesomeIcon icon={faHeart}/>{wish.wishItems.length > 0 && (<span className="totalItems">{wish.wishItems.length}</span>)}</span></a>
+        <a href="/cart"><span><FontAwesomeIcon icon={faShoppingBag}/>{cart.cartItems.length > 0 && (<span className="totalItems">{cart.cartItems.reduce((a, c) => a + c.quantity, 0)}</span>)}</span></a>
 
           
           </div>

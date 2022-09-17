@@ -33,7 +33,7 @@ const data = {
       _id: 3,
       title: "Kids",
       image: "/images/category/kids.jpg",
-    }
+    },
   ],
 
   products: [
@@ -46,6 +46,7 @@ const data = {
       image: "/images/products/net1.jpg",
       image1: "/images/products/ms1.jpg",
       image2: "/images/products/ms2.jpg",
+      countInStock: 5,
       price: "100.67",
     },
     {
@@ -57,6 +58,7 @@ const data = {
       image: "/images/products/w1net.jpg",
       image1: "/images/products/ws6.jpg",
       image2: "/images/products/ws7.jpg",
+      countInStock: 5,
       price: "99.99",
     },
     {
@@ -68,6 +70,7 @@ const data = {
       image: "/images/products/k1net.jpg",
       image1: "/images/products/ks13.jpg",
       image2: "/images/products/ks14.jpg",
+      countInStock: 5,
       price: "199.9",
     },
     {
@@ -79,6 +82,7 @@ const data = {
       image: "/images/products/w2net.jpg",
       image1: "/images/products/ws8.jpg",
       image2: "/images/products/ws9.jpg",
+      countInStock: 5,
       price: "60.6",
     },
     {
@@ -90,6 +94,7 @@ const data = {
       image: "/images/products/m2net.jpg",
       image1: "/images/products/ms3.jpg",
       image2: "/images/products/ms4.jpg",
+      countInStock: 5,
       price: "50.6",
     },
     {
@@ -102,6 +107,7 @@ const data = {
       image1: "/images/products/ks15.jpg",
       image2: "/images/products/ks16.jpg",
       image3: "/images/products/ks20.jpg",
+      countInStock: 5,
       price: "299.6",
     },
     {
@@ -114,6 +120,7 @@ const data = {
       image1: "/images/products/ks17.jpg",
       image2: "/images/products/ks18.jpg",
       image3: "/images/products/ks19.jpg",
+      countInStock: 5,
       price: "70.6",
     },
     {
@@ -124,9 +131,10 @@ const data = {
       category: "Men",
       image: "/images/products/w3net.jpg",
       image1: "/images/products/ms5.jpg",
+      countInStock: 5,
       price: "80.6",
     },
-  ]
+  ],
 };
 
 export default data;

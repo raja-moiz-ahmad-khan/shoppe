@@ -1,6 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useReducer } from "react";
 import { useParams } from "react-router-dom";
+import LoadingBox from "../components/LoadingBox";
+import MessageBox from "../components/MessageBox";
+import { getError } from "../utils";
 import ProductScreenCard from "./ProductScreenCard";
 // import logger from "use-reducer-logger";
 
@@ -40,7 +43,7 @@ try{
   const result = await axios.get(`/api/products/slug/${slug}`);
   dispatch({type:"FETCH_SUCCESS", payload: result.data});
 } catch(err){
-  dispatch({type:"FETCH_FAIL", payload: err.message});
+  dispatch({type:"FETCH_FAIL", payload: getError(err)});
 }
 
       
@@ -50,7 +53,7 @@ try{
   }, [slug]);
 
 
-  return loading ? (<h1 className="loading">loading...</h1>) : error ? (<h1 className="error">{error}</h1>) 
+  return loading ? (<LoadingBox/>) : error ? (<MessageBox>{error}</MessageBox>) 
   : (
   <ProductScreenCard products={products}/>
   );

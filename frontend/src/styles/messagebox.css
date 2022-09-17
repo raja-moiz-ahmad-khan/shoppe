@@ -1,0 +1,16 @@
+.message-container {
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.message {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.message-loading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
